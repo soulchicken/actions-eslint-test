@@ -1,6 +1,6 @@
 name: eslint-check
 on:
-  push:
+   pull_request:
     branches:
       - develop
 jobs:
