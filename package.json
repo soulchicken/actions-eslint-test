@@ -12,10 +12,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.{js,ts,tsx}": "eslint"
   },  
   "dependencies": {
     "next": "latest",
