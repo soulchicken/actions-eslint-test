@@ -1,6 +1,10 @@
 import { css, Global, keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
 
+interface AnimatedProps {
+  animation: string;
+}
+
 export const globalStyles = (
   <Global
     styles={css`
@@ -58,10 +62,6 @@ export const Combined = styled.div`
     background-color: linen;
   }
 `;
-
-interface AnimatedProps {
-  animation: string;
-}
 
 export const Animated = styled.div<AnimatedProps>`
   ${basicStyles};
