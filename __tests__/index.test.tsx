@@ -5,7 +5,7 @@ import IndexPage from '../pages/index';
 describe('IndexPage', () => {
   it('renders without crashing', () => {
     render(<IndexPage />);
-    expect(screen.getByText('Hello Next.js 👋100')).toBeInTheDocument();
+    expect(screen.getByText('Hello Next.js 👋101')).toBeInTheDocument(); // 일부러 틀리게 작성
     const links = screen.getAllByRole('link', { name: 'About' });
     expect(links[0]).toBeInTheDocument();
   });
