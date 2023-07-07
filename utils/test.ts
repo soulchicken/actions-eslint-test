@@ -1,2 +1,3 @@
-export const num = 1;
+export let num = 1;
+num += 1
 console.log(num)

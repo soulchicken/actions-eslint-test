@@ -6,11 +6,6 @@
     "start": "next start",
     "type-check": "tsc"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint"
   },  
