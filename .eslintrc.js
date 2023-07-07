@@ -1,33 +1,28 @@
 module.exports = {
-    "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+    parser: '@typescript-eslint/parser',
+    extends: [
+      'plugin:@typescript-eslint/recommended',
+      'plugin:prettier/recommended',
+      'airbnb'
     ],
-    "overrides": [
+    plugins: ['@typescript-eslint', 'prettier'],
+    rules: {
+      'prettier/prettier': 'error',
+      'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-props-no-spreading': 'off',
+      'jsx-a11y/anchor-is-valid': [
+        'error',
         {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
-    ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module",
+          components: ['Link'],
+          specialLink: ['hrefLeft', 'hrefRight'],
+          aspects: ['invalidHref', 'preferButton'],
+        },
+      ],
     },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "semi": [2, "always"],
-    }
-};
+    env: {
+      node: true,
+      es6: true,
+    },
+  };
+  
