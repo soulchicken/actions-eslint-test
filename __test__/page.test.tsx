@@ -12,7 +12,7 @@ describe('Home', () => {
     expect(mainElement).toBeInTheDocument();
 
     // description element should exist
-    const descriptionElement = screen.getByText(/Get started by editing/i);
+    const descriptionElement = screen.getByText(/Get start by editing/i); // 여기 바뀜
     expect(descriptionElement).toBeInTheDocument();
 
     // Vercel logo should exist
