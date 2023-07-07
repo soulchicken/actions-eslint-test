@@ -1,14 +1,14 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  extends: ['plugin:prettier/recommended', 'plugin:@typescript-eslint/recommended', 'airbnb'],
-  plugins: ['@typescript-eslint', 'prettier'],
+  extends: ['plugin:@typescript-eslint/recommended', 'airbnb'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'import/no-unresolved': 'off',
     'import/extensions': ['off'],
-    'prettier/prettier': 'error',
+    'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-props-no-spreading': 'off',
+    'react/jsx-one-expression-per-line': 'off',
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
